@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Title">
+    <meta name="author" content="Oscar Soto">
+    <title>Weather Application</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/weather_map.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center" id="header">Weather Application</h1>
+        </div>
+        <!-- Form -->
+        <div class="row">
+            <div class="col-xs-8">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="latitude" class="col-sm-2 control-label">Latitude</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="latitude" placeholder="Enter Latitude">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="longitude" class="col-sm-2 control-label">Longitude</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="longitude" placeholder="Enter Longitude">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="days" class="col-sm-2 control-label">How many days</label>
+                        <div class="col-sm-8">
+                            <input type="number" class="form-control" id="days" placeholder="Enter Between 1 and 16">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button id="getWeather" type="submit" class="btn btn-primary">Get Weather !</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div> <!-- Form -->
+
+        <!-- Current Weather-->
+        <div class="row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="currentWeatherTitle"></div>
+                    <div class="panel-body" id="currentWeather"></div>
+                </div>
+            </div>
+        </div> <!-- End of Current Weather -->
+
+        <!-- 3 Day Forecast-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading" id="weatherForecastTitle"></div>
+                    <div class="panel-body" id="weatherForecast"></div>
+                </div>
+            </div>
+        </div> <!-- End of 3 Day Forecast-->
+        <!-- Map -->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="mapTitle"></div>
+                    <div class="panel-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <div id="map" class="embed-responsive-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Map -->
+
+    </div>
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Load the Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBogAsq8FTzEWdwb2El_m89nclq93Y2t1k"></script>
+
+<script src="js/weather_map.js"></script>
+
+</body>
+</html>

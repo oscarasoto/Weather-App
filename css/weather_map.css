@@ -1,0 +1,46 @@
+img {
+    width: 20%;
+}
+
+#header {
+    margin-bottom: 5%;
+}
+
+/* Classes for Backgroung According to Type of Weather */
+.thunderstorm{
+    background-image: url("../img/weather/thunderstorms.jpg");
+    background-size: auto;
+}
+
+.light_intensity_drizzle{
+     background-image: url("../img/weather/light_intensity_drizzle.jpeg");
+    background-size: auto;
+}
+.light_rain{
+     background-image: url("../img/weather/light_rain.jpg");
+    background-size: auto;
+}
+.moderate_rain{
+     background-image: url("../img/weather/moderate_rain.gif");
+    background-size: auto;
+}
+.light_snow{
+     background-image: url("../img/weather/light_snow.jpg");
+    background-size: auto;
+}
+.clear{
+     background-image: url("../img/weather/sunny.jpg");
+    background-size: auto;
+}
+.few_clouds{
+     background-image: url("../img/weather/few_clouds.jpg");
+    background-size: auto;
+}
+.scattered_clouds{
+    background-image: url("../img/weather/scattered_clouds.jpg");
+    background-size: auto;
+}
+.heavy_intensity_rain{
+    background-image: url("../img/weather/heavy_intensity_rain.jpeg");
+    background-size: cover;
+}
